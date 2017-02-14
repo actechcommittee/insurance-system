@@ -1,0 +1,5 @@
+<?php 
+
+//compare product button
+
+?>
