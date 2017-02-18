@@ -23,12 +23,13 @@
   
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
+  <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
   <script src="./assets/js/jquery-2.1.4.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/Semantic-UI-master/dist/semantic.min.js"></script>
-
-  <style type="text/css">
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+   <style type="text/css">
   .activeItem.item.w3-hover-shadow{
       background-color: #880000!important;
       color:white!important;
@@ -55,11 +56,20 @@ $(document).on('click', '.pane div.clickable', function (e) {
     }
 });
 
-
+    $(function(){
+      $("#input").autocomplete({
+        source:"./includes/ajax.php"
+      });
+    });
+  
 </script>
 
 </head>
-<body>
+<body style="background: url('./assets/images/bg.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;">
   <?php require_once "./includes/header.php"; ?>
 
   <div class="container-fluid">

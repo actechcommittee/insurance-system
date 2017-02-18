@@ -21,9 +21,11 @@
   <title>Actec | Compare Products</title>
   <link rel="stylesheet" type="text/css" href="./assets/Semantic-UI-master/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
+  <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
   <script src="./assets/js/jquery-2.1.4.min.js"></script>
   <script src="./assets/Semantic-UI-master/dist/semantic.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
    <style type="text/css">
 
         .activeItem.item.w3-hover-shadow{
@@ -37,7 +39,11 @@
         } 
   </style>
   <script>
-  
+    $(function(){
+      $("#input").autocomplete({
+        source:"./includes/ajax.php"
+      });
+    });
   </script>
 
 </head>

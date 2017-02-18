@@ -38,10 +38,15 @@ $bg = array("w3-hover-orange","w3-hover-red","w3-hover-cyan","w3-hover-lime","w3
 	  <a class="<?php echo activeItem('/insurance-system/compare.php'); ?> item w3-hover-indigo w3-hover-shadow" href="compare.php">Compare Products</a>
 	  <!-- <div class="right menu"> -->
 	    <div class="item">
+
 	      <div class="ui icon input">
-	        <input type="text" placeholder="Search...">
-	        <i class="search link icon"></i>
+	      <form action="compare.php" style="display: inline;">
+	      <div class="ui-widget">	      
+	        <input type="text" placeholder="Search..." id="input" name="product">
+	      </div>  
+	        </form>
 	      </div>
+	      
 	    </div>
 	  <!-- </div> -->
 </div>
