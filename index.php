@@ -28,6 +28,18 @@
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/Semantic-UI-master/dist/semantic.min.js"></script>
 
+  <style type="text/css">
+  .activeItem.item.w3-hover-shadow{
+      background-color: #880000!important;
+      color:white!important;
+    }
+
+    .activeItem.item.w3-hover-shadow:hover{
+          background-color: #880000!important;
+          color:white!important;
+        } 
+  </style>
+
   <script type="text/javascript">
 
 $(document).on('click', '.pane div.clickable', function (e) {
@@ -52,48 +64,49 @@ $(document).on('click', '.pane div.clickable', function (e) {
 
   <div class="container-fluid">
   	   
-        
-  <div class="w3-padding-32 w3-padding-jumbo pane" role="tablist" aria-multiselectable="true" id="accordion">
+  <div class="row">
+  <div class="col-md-7 col-lg-7 col-md-offset-1 col-lg-offset-1">      
+  <div class="w3-padding-32 pane" role="tablist" aria-multiselectable="true" id="accordion">
       
-      <div class="w3-panel w3-blue w3-round w3-padding-8 w3-large w3-hover-shadow clickable" type="button" data-toggle="collapse" data-target="#collapseExample1" data-parent="#accordion" style="cursor: pointer;">
-        Button with data-target
-        <span class="w3-right"><i class="glyphicon glyphicon-minus"></i></span>
+      <div class="w3-panel w3-padding-8 w3-text-white clickable" type="button" data-toggle="collapse" data-target="#collapseExample1" data-parent="#accordion" style="cursor: pointer;background-color: #880000;">
+        About Actuarial Science
+        <span class="w3-right"><i class="glyphicon glyphicon-plus"></i></span>
       </div>
 
-      <div class="collapse in" id="collapseExample1">
-        <div class="w3-card-4 w3-padding w3-round ui piled segment" style="width: 94%;margin-left: 3%">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.<br><br>
+      <div class="collapse" id="collapseExample1">
+        <div class="w3-card-4 w3-padding ui piled segment w3-text-white" style="width: 94%;margin-left: 3%;line-height: 30px;background-color: #880000;">
+          If you are interested in economics and business and you are highly skilled in maths and statistics, the actuarial profession could be ideal for you. Members of the actuarial profession provide risk management expertise to insurance companies, consultancies, government, regulatory bodies and a range of investment and banking institutions. The role of the actuary is to try to reduce financial uncertainty to a manageable level, and therefore improve the predictability of future financial performance. Actuarial expertise is an essential ingredient in managing the solvency of insurance companies and pension schemes globally. Actuaries use probability theory, statistical analysis and financial mathematics to understand the past and to help predict future financial scenarios.
 
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.<br><br>
-
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.<br><br>
         </div>
       </div>
 
-      <div class="w3-panel w3-blue w3-round w3-padding-8 w3-large w3-hover-shadow clickable" type="button" data-toggle="collapse" data-target="#collapseExample2" data-parent="#accordion" style="cursor: pointer;">
-        Button with data-target
+      <div class="w3-panel w3-padding-8 w3-text-white clickable" type="button" data-toggle="collapse" data-target="#collapseExample2" data-parent="#accordion" style="cursor: pointer;background-color: #880000;">
+        About Actuarial Science
         <span class="w3-right"><i class="glyphicon glyphicon-plus"></i></span>
       </div>
-      
-      <div class="collapse" id="collapseExample2" >
-        <div class="w3-card-4 w3-padding w3-round ui piled segment" style="width: 94%;margin-left: 3%">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-        </div>
-      </div>  
 
-      <div class="w3-panel w3-blue w3-round w3-padding-8 w3-large w3-hover-shadow clickable" type="button" data-toggle="collapse" data-target="#collapseExample3" data-parent="#accordion" style="cursor: pointer;">
-        Button with data-target
+      <div class="collapse" id="collapseExample2">
+        <div class="w3-card-4 w3-padding ui piled segment w3-text-white" style="width: 94%;margin-left: 3%;line-height: 30px;background-color: #880000;">
+          If you are interested in economics and business and you are highly skilled in maths and statistics, the actuarial profession could be ideal for you. Members of the actuarial profession provide risk management expertise to insurance companies, consultancies, government, regulatory bodies and a range of investment and banking institutions. The role of the actuary is to try to reduce financial uncertainty to a manageable level, and therefore improve the predictability of future financial performance. Actuarial expertise is an essential ingredient in managing the solvency of insurance companies and pension schemes globally. Actuaries use probability theory, statistical analysis and financial mathematics to understand the past and to help predict future financial scenarios.
+
+        </div>
+      </div>
+
+      <div class="w3-panel w3-padding-8 w3-text-white clickable" type="button" data-toggle="collapse" data-target="#collapseExample3" data-parent="#accordion" style="cursor: pointer;background-color: #880000;">
+        About Actuarial Science
         <span class="w3-right"><i class="glyphicon glyphicon-plus"></i></span>
       </div>
-      
+
       <div class="collapse" id="collapseExample3">
-        <div class="w3-card-4 w3-padding w3-round ui piled segment" style="width: 94%;margin-left: 3%">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-        </div>
-      </div> 
+        <div class="w3-card-4 w3-padding ui piled segment w3-text-white" style="width: 94%;margin-left: 3%;line-height: 30px;background-color: #880000;">
+          If you are interested in economics and business and you are highly skilled in maths and statistics, the actuarial profession could be ideal for you. Members of the actuarial profession provide risk management expertise to insurance companies, consultancies, government, regulatory bodies and a range of investment and banking institutions. The role of the actuary is to try to reduce financial uncertainty to a manageable level, and therefore improve the predictability of future financial performance. Actuarial expertise is an essential ingredient in managing the solvency of insurance companies and pension schemes globally. Actuaries use probability theory, statistical analysis and financial mathematics to understand the past and to help predict future financial scenarios.
 
+        </div>
+      </div>
    </div>
 
+  </div>
+  </div>
   </div>
    
 </body>
