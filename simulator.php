@@ -21,36 +21,84 @@
   <title>Actec | Insurance Simulator</title>
   <link rel="stylesheet" type="text/css" href="./assets/Semantic-UI-master/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
-  <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  
+  <link rel="stylesheet" href="assets/js/index.css">
 
   <script src="./assets/js/jquery-2.1.4.min.js"></script>
   <script src="./assets/Semantic-UI-master/dist/semantic.min.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-   <style type="text/css">
-
-        .activeItem.item.w3-hover-shadow{
-          background-color: #880000!important;
-          color:white!important;
-        } 
-
-        .activeItem.item.w3-hover-shadow:hover{
-          background-color: #880000!important;
-          color:white!important;
-        } 
-  </style>
-
-  <script>
-    $(function(){
-      $("#input").autocomplete({
-        source:"./includes/ajax.php"
-      });
-    });
-  </script>
-
+  <script type="text/javascript" src="assets/js/index.js"></script>
+   
 </head>
 <body>
-	<?php require_once "./includes/header.php"; ?>
 
+<div id="wrapper">
+  
+<!-- overall wrapper -->
+<div id="banner">
+    <!-- wrap the divs -->
+    <div id="indexWrapper">
+            <!-- div on the left -->
+          <div id="leftHouse">
+          <div id="leftHouseOne">
+          </div>
+          <div id="leftHouseTwo" title="home"><img src="assets/images/simulator/home.jpg" style="width:100%; height:100%;"></div>
+          <div id="leftHouseFour" title="shopping"><img src="assets/images/simulator/shop.jpg" style="width:100%; height:100%;"></div>
+          <div id="leftHouseThree" title="restaurant"><img src="assets/images/simulator/restaurant.jpg" style="width:100%; height:100%;"></div>
+          <div id="leftHouseFive" title="property"><img src="assets/images/simulator/property.jpg" style="width:100%; height:100%;"></div>
+          <div id="leftHouseSix" title="hospital"><img src="assets/images/simulator/hospital.jpg" style="width:100%; height:100%;"></div>
+          </div>
+        <!-- div on the right -->
+          <div id="rightHouse">
+                <div id="rightHouseOne">here</div>
+              <div id="rightHouseTwo" title="award"><img src="assets/images/simulator/award.jpg" style="width:100%; height:100%;"></div>
+              <div id="rightHouseThree"><img src="assets/images/simulator/bank4.jpg" style="width:100%; height:100%;"></div>
+              <div id="rightHouseFour"><img src="assets/images/simulator/game.png" style="width:100%; height:100%;"></div>
+              <div id="rightHouseFive"><img src="assets/images/simulator/farm.jpg" style="width:100%; height:100%;"></div>
+              <div id="rightHouseSix" title="Stock Exchange Market"><img src="assets/images/simulator/stockExchange.jpg" style="width:100%; height:100%;"></div>
+          </div>
+        <!-- center div -->
+          <div id="midCenter">
+
+
+<!-- display in da center anim {the left bar}-->
+<div id="matchLeftTwo"><b>X</b><br>Welcome home</div>
+<div id="matchLeftThree"><b>X</b><br>Restaurant</div>
+<div id="matchLeftFour"><b>X</b><br>Shopping</div>
+<div id="matchLeftFive"><b>X</b><br>Property</div>
+<div id="matchLeftSix"><b>X</b><br>Hospital</div>
+
+                      <!-- display in da center anim {the right bar}-->
+                      <div id="matchrightTwo"><b>X</b><br>Awards</div>
+                      <div id="matchrightThree"><b>X</b><br>Bank</div>
+                      <div id="matchrightFour"><b>X</b><br>Gamble</div>
+                      <div id="matchrightFive"><b>X</b><br>Farm</div>
+                      <div id="matchrightSix"><b>X</b><br>Stock Exchange</div>
+
+
+
+
+
+          <!-- bottom of the div -->
+
+                  <div id="inMidCenterDown">
+
+                      <div id="bottomHouseOne">here</div>
+                  <div id="bottomHouseTwo">here</div>
+                  <div id="bottomHouseThree" title="buy music">
+                       <img src="assets/images/simulator/music.jpg" style="width:100%; height:100%;">
+                      <audio controls autoplay>
+                         <source src="assets/audio/wizKhalifa.mp3" type="audio/mpeg">                      
+                      </audio>
+                  </div>
+                  <div id="bottomHouseFour"title="Property level"></div>
+                  <div id="bottomHouseFive">here</div>
+                  <div id="bottomHouseSix">here</div>
+
+                  </div>
+          </div>
+    </div>
+</div>
+</div>
 </body>
 
 </html>
