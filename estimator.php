@@ -39,11 +39,7 @@
         } 
   </style>
   <script>
-    $(function(){
-      $("#input").autocomplete({
-        source:"./includes/ajax.php"
-      });
-    });
+   
   </script>
 
 </head>

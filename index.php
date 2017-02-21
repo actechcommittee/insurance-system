@@ -56,11 +56,7 @@ $(document).on('click', '.pane div.clickable', function (e) {
     }
 });
 
-    $(function(){
-      $("#input").autocomplete({
-        source:"./includes/ajax.php"
-      });
-    });
+    
   
 </script>
 

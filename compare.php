@@ -39,17 +39,47 @@
         } 
   </style>
   <script>
+  $('form').keypress(function(event){
+        if(event.which == 13){
+            event.preventDefault();
+        }
+    });
+
     $(function(){
       $("#input").autocomplete({
         source:"./includes/ajax.php"
       });
     });
+
+
+    function getData(uot) {
+      $.get("./includes/product_compare.php",
+            $(uot).serialize(),
+            function(result){
+              console.log(result);
+                $("#productdiv").html(result);
+            }
+            );
+    }
+
+    function openModal(di,id,did){          
+      document.getElementById(id).style.display='block';
+      $(did).load( "./includes/product_desc.php?di="+di);                    
+    }
+
+    function closeModal(id,did){
+      $(did).empty();
+      document.getElementById(id).style.display='none'; 
+    }
   </script>
 
 </head>
 <body>
 	<?php require_once "./includes/header.php"; ?>
-
+<div class="w3-row">  
+<div id="productdiv" class="w3-col m8 l8"></div>
+<div class="w3-col m4 l4"></div>
+</div>
 </body>
 
 </html>

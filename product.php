@@ -88,11 +88,6 @@ function editorAssistant(id){
     }
 
     
-    $(function(){
-      $("#input").autocomplete({
-        source:"./includes/ajax.php"
-      });
-    });
 
   </script>
 
@@ -111,8 +106,8 @@ function editorAssistant(id){
    <nav class="w3-sidenav sidenavopen w3-card-2 w3-border w3-margin-top" style="width:25%" id="mySidenav">
     <!-- <a href="#" onclick="w3_close();" class="w3-closenav closebtn">x</a> -->
    <?php foreach ($companies as $company) :?>
-    <a class="w3-padding-16 <?php echo $bg[$c]; ?> w3-border-bottom w3-hover-shadow" href="javascript:void(0)" onclick="editorAssistant('<?php echo $company->id; ?>')">
-        <?php echo $company->name;$c++; ?>
+    <a class="w3-padding-16 <?php echo $bg[$c]; ?> w3-border-bottom w3-hover-shadow" href="javascript:void(0)" onclick="editorAssistant('<?php echo $company->c_id; ?>')">
+        <?php echo $company->c_name;$c++; ?>
     </a>
   <?php endforeach;?>
     
