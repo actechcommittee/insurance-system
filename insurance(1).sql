@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 21, 2017 at 07:10 AN
+-- Generation Time: Feb 22, 2017 at 07:32 AN
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -99,6 +99,48 @@ INSERT INTO `products_category` (`id`, `name`) VALUES
 (2, 'Motor Third Party Fire & Theft Cover'),
 (3, 'Motor Comprehensive Cover');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `simulator_assets`
+--
+
+CREATE TABLE `simulator_assets` (
+  `a_id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(64) NOT NULL,
+  `img` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `simulator_assets`
+--
+
+INSERT INTO `simulator_assets` (`a_id`, `name`, `img`) VALUES
+(1, 'House', 'home.jpg'),
+(2, 'Car', 'school-bus.png'),
+(3, 'Commercial Building', 'bank4.jpg'),
+(4, 'land', 'farm.jpg'),
+(5, 'school', 'school.png'),
+(6, 'television', 'televisions.png'),
+(7, 'violin', 'violin.png'),
+(8, 'smart phone', 'phone-call-2.png'),
+(9, 'documents', 'briefcase.png'),
+(10, 'Laboratory', 'test-tubes.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `simulator_policies`
+--
+
+CREATE TABLE `simulator_policies` (
+  `p_id` int(11) NOT NULL,
+  `asset_id` int(11) NOT NULL,
+  `p_name` varchar(64) NOT NULL,
+  `descriptions` text NOT NULL,
+  `pimg` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Indexes for dumped tables
 --
@@ -122,6 +164,12 @@ ALTER TABLE `products_category`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `simulator_assets`
+--
+ALTER TABLE `simulator_assets`
+  ADD PRIMARY KEY (`a_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -140,6 +188,11 @@ ALTER TABLE `products`
 --
 ALTER TABLE `products_category`
   MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `simulator_assets`
+--
+ALTER TABLE `simulator_assets`
+  MODIFY `a_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
