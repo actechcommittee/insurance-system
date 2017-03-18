@@ -1,281 +1,136 @@
-$(document).ready(function($){
-/*************************************************************************************************/
-/*Left anim*/
-	// $('#leftHouseTwo').click(function(){
-	// 	$('#matchLeftThree').hide();
-	// 	$('#matchLeftFour').hide();
-	// 	$('#matchLeftFive').hide();
-	// 	$('#matchLeftSix').hide();
-	// 	$('#matchrightTwo').hide();
-	// 	$('#matchrightThree').hide();
-	// 	$('#matchrightFour').hide();
-	// 	$('#matchrightFive').hide();
-	// 	$('#matchrightSix').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#matchLeftTwo').show(1000).animate({left:"10%",marginTop:"100px",width:"80%",height:"70%",borderRadius:"10px"},2000);
-	// });
+$(document).ready(function(){
 
-	// $('b').click(function(){
-	// 	$('#matchLeftTwo').hide();
-	// 	$('#inMidCenterDown').show(2000);
-	// });
-/**************************************************************************************************/
+	if (!($("#mainTrack").length == 0)) {soundEffects("mainTrack");}
+	
 
+	$(document).on('click','.bottom3imgp',function(){
+         $("#leftHouse").load("includes/simulatorAjax.php?assetId="+ $(this).attr('data-setid'));    
+  });
 
-/*************************************************************************************************/
-	// $('#leftHouseThree').click(function(){
-	// 	$('#matchLeftTwo').hide();
-	// 	$('#matchLeftFour').hide();
-	// 	$('#matchLeftFive').hide();
-	// 	$('#matchLeftSix').hide();
-	// 	$('#matchrightTwo').hide();
-	// 	$('#matchrightThree').hide();
-	// 	$('#matchrightFour').hide();
-	// 	$('#matchrightFive').hide();
-	// 	$('#matchrightSix').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#matchLeftThree').show(1000).animate({left:"10%",marginTop:"100px",width:"80%",height:"70%",borderRadius:"10px"},2000);
-	// });
+$(document).on('click','.bottom3imglostp',function(){
+	soundEffects('assetClicked');
+	$('.alert-autocloseable-danger').show();
+	$('.alert-autocloseable-danger').delay(3000).fadeOut("slow");
+});
 
-	// $('b').click(function(){
-	// 	$('#matchLeftThree').hide();
-	// 	$('#inMidCenterDown').show(2000);
-	// });
-/**************************************************************************************************/
-
-
-/*************************************************************************************************/
-	// $('#leftHouseFour').click(function(){
-	// 	$('#matchLeftThree').hide();
-	// 	$('#matchLeftTwo').hide();
-	// 	$('#matchLeftFive').hide();
-	// 	$('#matchLeftSix').hide();
-	// 	$('#matchrightTwo').hide();
-	// 	$('#matchrightThree').hide();
-	// 	$('#matchrightFour').hide();
-	// 	$('#matchrightFive').hide();
-	// 	$('#matchrightSix').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#matchLeftFour').show(1000).animate({left:"10%",marginTop:"100px",width:"80%",height:"70%",borderRadius:"10px"},2000);
-	// });
-
-	// $('b').click(function(){
-	// 	$('#matchLeftFour').hide();
-	// 	$('#inMidCenterDown').show(2000);
-	// });
-/**************************************************************************************************/
-
-
-/*************************************************************************************************/
-	// $('#leftHouseFive').click(function(){
-	// 	$('#matchLeftThree').hide();
-	// 	$('#matchLeftFour').hide();
-	// 	$('#matchLeftTwo').hide();
-	// 	$('#matchLeftSix').hide();
-	// 	$('#matchrightTwo').hide();
-	// 	$('#matchrightThree').hide();
-	// 	$('#matchrightFour').hide();
-	// 	$('#matchrightFive').hide();
-	// 	$('#matchrightSix').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#matchLeftFive').show(1000).animate({left:"10%",marginTop:"100px",width:"80%",height:"70%",borderRadius:"10px"},2000);
-	// });
-
-	// $('b').click(function(){
-	// 	$('#matchLeftFive').hide();
-	// 	$('#inMidCenterDown').show(2000);
-	// });
-/**************************************************************************************************/
-
-
-/*************************************************************************************************/
-	// $('#leftHouseSix').click(function(){
-	// 	$('#matchLeftThree').hide();
-	// 	$('#matchLeftFour').hide();
-	// 	$('#matchLeftFive').hide();
-	// 	$('#matchLeftTwo').hide();
-	// 	$('#matchrightTwo').hide();
-	// 	$('#matchrightThree').hide();
-	// 	$('#matchrightFour').hide();
-	// 	$('#matchrightFive').hide();
-	// 	$('#matchrightSix').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#matchLeftSix').show(1000).animate({left:"10%",marginTop:"100px",width:"80%",height:"70%",borderRadius:"10px"},2000);
-	// });
-
-	// $('b').click(function(){
-	// 	$('#matchLeftSix').hide();
-	// 	$('#inMidCenterDown').show(2000);
-	// });
-/**************************************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Right anim*/
-
-/*************************************************************************************************/
-	// $('#rightHouseTwo').click(function(){
-	// 	$('#matchrightThree').hide();
-	// 	$('#matchrightFour').hide();
-	// 	$('#matchrightFive').hide();
-	// 	$('#matchrightSix').hide();
-	// 	$('#matchLeftThree').hide();
-	// 	$('#matchLeftFour').hide();
-	// 	$('#matchLeftFive').hide();
-	// 	$('#matchLeftTwo').hide();
-	// 	$('#matchLeftSix').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#matchrightTwo').show(1000).animate({left:"10%",marginTop:"100px",width:"80%",height:"70%",borderRadius:"10px"},2000);
-	// });
-
-	// $('b').click(function(){
-	// 	$('#matchrightTwo').hide();
-	// 	$('#inMidCenterDown').show(2000);
-	// });
-/**************************************************************************************************/
-
-
-/*************************************************************************************************/
-	// $('#rightHouseThree').click(function(){
-	// 	$('#matchrightTwo').hide();
-	// 	$('#matchrightFour').hide();
-	// 	$('#matchrightFive').hide();
-	// 	$('#matchrightSix').hide();
-	// 	$('#matchLeftThree').hide();
-	// 	$('#matchLeftFour').hide();
-	// 	$('#matchLeftFive').hide();
-	// 	$('#matchLeftTwo').hide();
-	// 	$('#matchLeftSix').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#matchrightThree').show(1000).animate({left:"10%",marginTop:"100px",width:"80%",height:"70%",borderRadius:"10px"},2000);
-	// });
-
-	// $('b').click(function(){
-	// 	$('#matchrightThree').hide();
-	// 	$('#inMidCenterDown').show(2000);
-	// });
-/**************************************************************************************************/
-
-
-/*************************************************************************************************/
-	// $('#rightHouseFour').click(function(){
-	// 	$('#matchrightThree').hide();
-	// 	$('#matchrightTwo').hide();
-	// 	$('#matchrightFive').hide();
-	// 	$('#matchrightSix').hide();
-	// 	$('#matchLeftThree').hide();
-	// 	$('#matchLeftFour').hide();
-	// 	$('#matchLeftFive').hide();
-	// 	$('#matchLeftTwo').hide();
-	// 	$('#matchLeftSix').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#matchrightFour').show(1000).animate({left:"10%",marginTop:"100px",width:"80%",height:"70%",borderRadius:"10px"},2000);
-	// });
-
-	// $('b').click(function(){
-	// 	$('#matchrightFour').hide();
-	// 	$('#inMidCenterDown').show(2000);
-	// });
-/**************************************************************************************************/
-
-
-/*************************************************************************************************/
-	// $('#rightHouseFive').click(function(){
-	// 	$('#matchrightThree').hide();
-	// 	$('#matchrightFour').hide();
-	// 	$('#matchrightTwo').hide();
-	// 	$('#matchrightSix').hide();
-	// 	$('#matchLeftThree').hide();
-	// 	$('#matchLeftFour').hide();
-	// 	$('#matchLeftFive').hide();
-	// 	$('#matchLeftTwo').hide();
-	// 	$('#matchLeftSix').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#matchrightFive').show(1000).animate({left:"10%",marginTop:"100px",width:"80%",height:"70%",borderRadius:"10px"},2000);
-	// });
-
-	// $('b').click(function(){
-	// 	$('#matchrightFive').hide();
-	// 	$('#inMidCenterDown').show(2000);
-	// });
-/**************************************************************************************************/
-
-
-/*************************************************************************************************/
-	// $('#rightHouseSix').click(function(){
-	// 	$('#matchrightThree').hide();
-	// 	$('#matchrightFour').hide();
-	// 	$('#matchrightFive').hide();
-	// 	$('#matchrightTwo').hide();
-	// 	$('#matchLeftThree').hide();
-	// 	$('#matchLeftFour').hide();
-	// 	$('#matchLeftFive').hide();
-	// 	$('#matchLeftTwo').hide();
-	// 	$('#matchLeftSix').hide();
-	// 	$('#inMidCenterDown').hide();
-	// 	$('#matchrightSix').show(1000).animate({left:"10%",marginTop:"100px",width:"80%",height:"70%",borderRadius:"10px"},2000);
-	// });
-
-	// $('b').click(function(){
-	// 	$('#matchrightSix').hide();
-	// 	$('#inMidCenterDown').show(2000);
-	// });
-/**************************************************************************************************/
-
-
-$('.House').click(function(){
-		$('#match').hide();
-		$('#inMidCenterDown').hide();
-		$('#match').show(1000).animate({left:"10%",marginTop:"100px",width:"80%",height:"70%",borderRadius:"10px"},2000);
+$("#mySidenav").click(function(){
+		$("#accordion").hide();
 	});
+
+	$("#mySidenav").click(function(){
+		$(this).addClass("fixed");
+	});
+  
 
 	$('b').click(function(){
 		$('#match').hide();
 		$('#inMidCenterDown').show(2000);
 	});
 
-$('i').click(function(){
-	$('audio').show().animate({marginTop:"-400"}).hide(20000);
-})
+	// make claim button
+	$("#makeClaim").click(function(){
+		document.getElementById('componentLoadModal').style.display = "none";
+		$("#makeClaim").hide()
+		var assetId = $("#makeClaim").attr("data-assetID");
+        setTimeout(function(){$('.bottom3imgp[data-setid='+assetId+']').css('opacity',1);},1000);
+    });
 
+	$(document).on("click",".Asset",function(){
+		// orderOne.push(assetid);
+		if (orderOne.length < 1) $('.alert-autocloseable').delay(1000).fadeOut("slow");
+		$('.Asset').addClass('animateDisabled');	
+		var assetid = $(this).attr("data-setid");
+		if(orderOne.includes(assetid)){
+			soundEffects('assetClicked');
+			$('.alert-autocloseable-danger').show();
+			$('.alert-autocloseable-danger').delay(1000).fadeOut("slow");
+			$('.Asset').removeClass('animateDisabled');
+		}else{
+			soundEffects('assetClick');
+			var di = (assetid%5);
+			switch(di){
+				case 1:
+					var top = 408;
+					break;
+				case 2:
+					var top = 306;
+					break;
+				case 3:
+					var top = 204;
+					break;
+				case 4:
+					var top = 102;
+					break;
+				default:
+					var top = 0;
+			}
 
+			if (order > 4) order = 0;
 
+			
+			
+			if ($(this).hasClass("left")) {
+				$(this).animate({marginLeft:200+order*180+"px"},500,function(){
 
+					$(this).animate({marginTop:top+"px"},1000,function(){
 
+						$(".bottom3img").eq(order++).attr({"src":$(this).attr("src"),"data-setid":assetid});
+						$(this).css({marginLeft:"0px",marginTop:"0px"}).animate({opacity:'toggle',height:'toggle'}).animate({opacity:'toggle',height:'toggle'});
+						$('.Asset').removeClass('animateDisabled');
 
+						if(orderOne.length == 5) {
+							$('.bottom3img').addClass('bottom3imgp');
+                			$('.bottom3img').removeClass('bottom3img');
+							$('.Asset').addClass('animateDisabled');
+							$('.Asset').css('opacity',0.3)
+							document.getElementById('continuetp').style.display = 'block';
+						}
 
+					});
+				});
+			}else{
+				$(this).animate({marginLeft:-(200+(4-order)*180)+"px"},500,function(){
 
+					$(this).animate({marginTop:top+"px"},1000,function(){
+						
+						$(".bottom3img").eq(order++).attr({"src":$(this).attr("src"),"data-setid":assetid});
+						$(this).css({marginLeft:"0px",marginTop:"0px"}).animate({opacity:'toggle',height:'toggle'}).animate({opacity:'toggle',height:'toggle'});
+						$('.Asset').removeClass('animateDisabled');
 
+						if(orderOne.length == 5) {
+							$('.bottom3img').addClass('bottom3imgp');
+                			$('.bottom3img').removeClass('bottom3img');
+							$('.Asset').addClass('animateDisabled');
+							$('.Asset').css('opacity',0.3)
+							document.getElementById('continuetp').style.display = 'block';
+						}
 
+					});
+				});
+			}
+            // store asset ids to keep track of user's selections
+			if (orderOne.length == 5) {
+				orderOne[order] = assetid;
+				orderOnePics[order] = $(this).attr("src");
+			}else{
+				orderOne.push(assetid);
+				orderOnePics.push($(this).attr("src"));
+			}
 
+			// alert user when done selecting asserts
+			
 
+		}
+		
+			
+	});
+	
 
-
-
-
-
-
+	function soundEffects(elem){
+		var sound = document.getElementById(elem);
+		sound.play();
+	}
+	
 	var x = 0;
 	var y = 0;
 	/*reference to the banner div*/
@@ -290,4 +145,4 @@ $('i').click(function(){
 	/*if you want to scroll image vertically use y--*/
 	},90)
 
-})(jQuery);
+});
